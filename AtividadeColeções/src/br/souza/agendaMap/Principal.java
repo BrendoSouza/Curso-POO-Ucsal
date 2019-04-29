@@ -45,7 +45,7 @@ public class Principal {
 					telefoneField.setText("");
 					descricaoField.setText("");
 
-					continuar = JOptionPane.showConfirmDialog(null,msgContinua, "Selecione uma Opção", JOptionPane.QUESTION_MESSAGE);
+					continuar = JOptionPane.showConfirmDialog(null,msgContinua);
 					break;
 					
 				case 2:
@@ -55,7 +55,7 @@ public class Principal {
 					saida(resultado);
 					JOptionPane.showMessageDialog(null,agenda.buscarContatos(nomeField.getText()));
 
-					continuar = JOptionPane.showConfirmDialog(null,msgContinua, "Selecione uma Opção", JOptionPane.QUESTION_MESSAGE);
+					continuar = JOptionPane.showConfirmDialog(null,msgContinua);
 					break;
 				case 3:
 					JOptionPane.showMessageDialog(null, "Você está na área de Remoção Contatos!", "Remover Contato", JOptionPane.INFORMATION_MESSAGE);
@@ -65,13 +65,13 @@ public class Principal {
 					
 					agenda.removerContatos(nomeField.getText());
 					
-					continuar = JOptionPane.showConfirmDialog(null,msgContinua, "Selecione uma Opção", JOptionPane.QUESTION_MESSAGE);
+					continuar = JOptionPane.showConfirmDialog(null,msgContinua);
 					break;
 					
 				case 4:
 					JOptionPane.showMessageDialog(null, "Esta é a sua agenda!", "Agenda", JOptionPane.INFORMATION_MESSAGE);
 					JOptionPane.showMessageDialog(null,agenda, "Lista de Contatos", JOptionPane.PLAIN_MESSAGE);
-					continuar = JOptionPane.showConfirmDialog(null,msgContinua, "Selecione uma Opção", JOptionPane.QUESTION_MESSAGE);
+					continuar = JOptionPane.showConfirmDialog(null, msgContinua);
 					break;
 					
 				case 5:
