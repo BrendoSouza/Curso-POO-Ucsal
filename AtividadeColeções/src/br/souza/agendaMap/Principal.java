@@ -54,6 +54,9 @@ public class Principal {
 			                "Busca de Contato", JOptionPane.OK_CANCEL_OPTION);
 					saida(resultado);
 					JOptionPane.showMessageDialog(null,agenda.buscarContatos(nomeField.getText()));
+					nomeField.setText("");
+					telefoneField.setText("");
+					descricaoField.setText("");
 
 					continuar = JOptionPane.showConfirmDialog(null,msgContinua);
 					break;
@@ -62,8 +65,10 @@ public class Principal {
 					resultado = JOptionPane.showConfirmDialog(null, buscarContato,
 	                "Remover Contato", JOptionPane.OK_CANCEL_OPTION);
 					saida(resultado);
-					
 					agenda.removerContatos(nomeField.getText());
+					nomeField.setText("");
+					telefoneField.setText("");
+					descricaoField.setText("");
 					
 					continuar = JOptionPane.showConfirmDialog(null,msgContinua);
 					break;
